@@ -7,7 +7,6 @@
 ![EfficientNetB0](https://img.shields.io/badge/EfficientNetB0-Transfer%20Learning-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-REST%20API-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![React](https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **AI-powered malaria parasite detection from microscopic blood smear images.**  
 Upload a cell image → get an instant, high-confidence diagnosis in under 2 seconds.
@@ -30,9 +29,7 @@ Upload a cell image → get an instant, high-confidence diagnosis in under 2 sec
 - [API Reference](#-api-reference)
 - [Dataset](#-dataset)
 - [Performance Metrics](#-performance-metrics)
-- [Deployment](#-deployment)
 - [Disclaimer](#-disclaimer)
-- [License](#-license)
 
 ---
 
@@ -449,25 +446,6 @@ The model was trained and evaluated on the **NIH Malaria Cell Images Dataset**.
 
 ---
 
-## ☁️ Deployment
-
-### Backend — Render
-
-1. Push the `backend/` folder to GitHub (ensure `best_model.keras` is uploaded as a release asset or fetched at startup)
-2. Create a new **Web Service** on [Render](https://render.com)
-3. Set the build command: `pip install -r requirements.txt`
-4. Set the start command: `gunicorn app:app`
-5. Add environment variables: `FLASK_DEBUG=false`, `PORT=10000`
-
-### Frontend — Vercel
-
-1. Import the repository into [Vercel](https://vercel.com)
-2. Set the root directory to `frontend/`
-3. Add environment variable: `VITE_API_URL=https://your-render-backend.onrender.com`
-4. Deploy
-
----
-
 ## ⚠️ Disclaimer
 
 MalariaVision AI is developed for **research and educational purposes only**.
@@ -476,12 +454,6 @@ MalariaVision AI is developed for **research and educational purposes only**.
 - Always consult a qualified healthcare professional for medical decisions
 - Model accuracy may vary with image quality, staining technique, and equipment
 - The validation pipeline reduces but cannot eliminate all false predictions on non-medical images
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
